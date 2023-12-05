@@ -1,0 +1,30 @@
+__pycache__
+*.py[cod]
+*$py.class
+# Distribution / packaging 
+.Python build/
+dist/
+lib/
+lib64/
+sdist/
+var/
+*.manifest 
+*.spec 
+# Log files
+pip-log.txt
+pip-delete-this-directory.txt
+*.log
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+.history/
