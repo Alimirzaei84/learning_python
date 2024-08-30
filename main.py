@@ -57,7 +57,7 @@ class TodoList:
 
 
 def create_task(todo_list, name, priority, done):
-    todo_list.create_task(name, priority, True if done == '1' else False)
+    todo_list.create_task(name, priority, done)
     print(f"Task {name} created successfully.")
 
 
@@ -72,15 +72,15 @@ def main():
     parser_list.set_defaults(func=todo_list.list_tasks)  # Corrected line
 
     # Sub-parser for the "create_task" command
-    parser_create = subparsers.add_parser('create_task', help='Create a new task')
+    parser_create = subparsers.add_parser('create', help='Create a new task')
     parser_create.add_argument('name', type=str, help='Name of the task')
     parser_create.add_argument('priority', type=str, nargs='?', default='Medium',
-                               help='Priority of the task (default: low)')
+                               help='Priority of the task (default: Medium)')
     parser_create.add_argument('done', type=str, nargs='?', default='0',
                                help='Description of the task situation 1 or 0 (default: 0)')
     parser_create.set_defaults(
         func=lambda arguments: create_task(todo_list, arguments.name, arguments.priority,
-                                           True if arguments.done == '1' else False))
+                                            False if arguments.done == '0' else True))
 
     args = parser.parse_args()
     if args.command:

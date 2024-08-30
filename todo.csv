@@ -1,10 +1,4 @@
-Task1,Medium,True
-Task2,low,True
-Task2,low,True
-Task2,low,True
-Task2,low,False
-Task2,low,True
-Task2,low,True
-task4,low,False
-task4,low,False
-task4,low,False
+Test Task 2,high,True
+Test Task 2,high,False
+Test Task 2,Medium,False
+list,lsit,False
