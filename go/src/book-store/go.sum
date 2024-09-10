@@ -1,0 +1,4 @@
+github.com/Alimirzaei84/book-store v0.0.0-20240910114914-4d71a0943265 h1:0D+Se5Bk60DqBSvYXqV/uZG/QWDa8EzjQGc4GBmfr4A=
+github.com/Alimirzaei84/book-store v0.0.0-20240910114914-4d71a0943265/go.mod h1:iiQGLtn/0ZdYtCwmd7VdRavqGiys5YS3Ea0uy2AYHqo=
+github.com/gorilla/mux v1.8.1 h1:TuBL49tXwgrFYWhqrNgrUNEY92u81SPhu7sTdzQEiWY=
+github.com/gorilla/mux v1.8.1/go.mod h1:AKf9I4AEqPTmMytcMc0KkNouC66V3BtZ4qD5fmWSiMQ=
